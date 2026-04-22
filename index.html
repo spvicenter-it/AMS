@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS System</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        #app-container { width: 100%; height: 100vh; }
+        iframe { border: none; width: 100%; height: 100%; }
+    </style>
+</head>
+<body oncontextmenu="return false;"> <div id="app-container"></div>
+
+    <script>
+        (function() {
+            var encryptedUrl = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4NlkydURTSEJEdXkyX05WbnJZS2JqVGRxVWhuLWc1VnRzNzlxV3RjbDVFdld6TTFET0pKVUpWSHJTbFVudHdiWXMtQS9leGVj";
+            var container = document.getElementById('app-container');
+            var iframe = document.createElement('iframe');
+            iframe.src = atob(encryptedUrl);
+            iframe.frameBorder = "0";
+            container.appendChild(iframe);
+        })();
+    </script>
+</body>
+</html>
